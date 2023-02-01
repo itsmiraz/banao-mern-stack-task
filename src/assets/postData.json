@@ -1,0 +1,51 @@
+[
+    {
+        "img":"../assets/images/Rectangle 5 (2).png",
+        "title":"What if famous brands had regular fonts? Meet RegulaBrands!",
+        "details":"I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+        "type":"✍️ Article",
+        "userDetails":{
+            "name":"Sarthak Kamra"
+           
+        } 
+    },
+    {
+        "img":"../assets/images/Rectangle 5 (1).png",
+        "title":"Tax Benefits for Investment under National Pension Scheme launched by Government",
+        "details":"I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+        "type":"🔬️ Education",
+        "userDetails":{
+            "name":"Sarah West"
+           
+        } 
+    },
+    {
+        "img":"../assets/images/Rectangle 5.png",
+        "title":"Finance & Investment Elite Social Mixer @Lujiazui",
+        "details":"",
+        "type":"🗓️ Meetup",
+        "publisher_date":"Fri, 12 Oct, 2018",
+        "location":"Ahmedabad, India",
+        "btn":"Visit Website",
+
+        "userDetails":{
+            "name":"Ronal Jones"
+           
+        } 
+    },
+    {
+        "img":"",
+        "title":"Software Developer",
+        "details":"",
+        "company":"Innovaccer Analytics Private Ltd.",
+        "type":"💼️ Job",
+        "publisher_date":"Fri, 12 Oct, 2018",
+        "location":"Noida, India",
+        "btn":"Apply on Timesjobs",
+
+        "userDetails":{
+            "name":"Joseph Gray"
+           
+        } 
+    }
+]

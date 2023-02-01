@@ -54,7 +54,7 @@ const Header = () => {
                 <input type="text" className='border border-0 rounded-pill   input' placeholder='Search for your favorite groups in ATG' />
             </div>
 
-            <p>Create Account. <span className='text-primary fw-semibold'>It's Free</span> <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <p className='p-0 m-0'>Create Account. <span className='text-primary fw-semibold'>It's Free</span> <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0L5 5L10 0H0Z" fill="#2E2E2E" />
             </svg>
             </p>
