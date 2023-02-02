@@ -1,18 +1,34 @@
 import React from 'react';
 import posts from '../../assets/postData.json'
 import PostCard from '../PostCard/PostCard';
+import Dropdown from 'react-bootstrap/Dropdown';
+
 import './Post.css'
 const Posts = () => {
 
     return (
         <section className='posts'>
+            <div className='d-flex d-sm-none p-2 justify-content-between align-items-center'>
+                <h1 className='fw-bold fs-4'>Posts(366)</h1>
+                <Dropdown>
+                        <Dropdown.Toggle className='fw-semibold' variant="" id="dropdown-basic">
+                        Filter: All
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Edit</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Report</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Option 3</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+            </div>
             <div className='row row-cols-6'>
-                <div className='col-8'>
+                <div className='col-sm-8 col-12 '>
                     {
                         posts.map((post, i) => <PostCard key={i} post={post} />)
                     }
                 </div>
-                <div className='col-4  location'>
+                <div className='col-sm-4 col-0 d-none d-sm-block location'>
 
                     <div className=' d-flex align-items-center border-bottom justify-content-between mb-4'>
                         <svg width="16" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">

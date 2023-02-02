@@ -5,7 +5,7 @@ import './MainNavber.css'
 
 const MainNavber = () => {
     return (
-        <div className='d-flex justify-content-between nav border-bottom pb-2 align-items-center'>
+        <div className='d-sm-flex d-none justify-content-between nav border-bottom pb-2 align-items-center'>
             <div className='d-flex  '>
                 <p className='px-2 fw-bold  '>
                     All Posts(32)

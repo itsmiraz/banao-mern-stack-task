@@ -1,11 +1,14 @@
 import React from 'react';
+import LoginModal from '../UserAuthentication/LoginModal/LoginModal';
 import './Header.css'
-
+import Button from 'react-bootstrap/Button';
 
 
 const Header = () => {
+
+    const [modalShow, setModalShow] = React.useState(false);
     return (
-    
+
         <header className=''>
             <div className='d-none   header d-sm-flex align-items-center justify-content-between'>
                 <div>
@@ -56,14 +59,21 @@ const Header = () => {
                     <input type="text" className='border border-0 rounded-pill   input' placeholder='Search for your favorite groups in ATG' />
                 </div>
 
-                <p className='p-0 m-0'>Create Account. <span className='text-primary fw-semibold'>It's Free</span> <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <p className='p-0 m-0 btn-hover'  onClick={() => setModalShow(true)}>Create Account. <span className='text-primary fw-semibold'>It's Free</span> <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L5 5L10 0H0Z" fill="#2E2E2E" />
                 </svg>
                 </p>
+
+               
             </div>
-            </header>
-            
-       
+            <LoginModal
+                show={modalShow}
+                setModalShow={setModalShow}
+                    onHide={() => setModalShow(false)}
+                ></LoginModal>
+        </header>
+
+
     );
 };
 

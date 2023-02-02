@@ -1,3 +1,11 @@
 .nav{
     margin: 30px 200px;
 }
+
+@media only screen and (max-width: 576px) {
+    .nav{
+        padding: 10px 10px;
+        }
+    
+
+}

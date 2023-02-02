@@ -3,7 +3,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 const PostCard = ({ post }) => {
     console.log(post)
     return (
-        <div className='border mb-4 border border-top-0 rounded-bottom'>
+        <div className='border mb-4 border rounded-bottom'>
             <img src={post.img} alt="" className='pb-2 img-fluid' />
             <div className='p-2 '>
                 <h6 className='fw-semibold'>{post.type}</h6>
