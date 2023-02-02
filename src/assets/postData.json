@@ -1,51 +1,56 @@
 [
     {
-        "img":"https://res.cloudinary.com/dicnezd6a/image/upload/v1675304803/images/Rectangle_5_1_vf0xat.png",
-        "title":"What if famous brands had regular fonts? Meet RegulaBrands!",
-        "details":"I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
-        "type":"✍️ Article",
-        "userDetails":{
-            "name":"Sarthak Kamra"
-           
-        } 
+        "img": "https://res.cloudinary.com/dicnezd6a/image/upload/v1675304803/images/Rectangle_5_1_vf0xat.png",
+        "title": "What if famous brands had regular fonts? Meet RegulaBrands!",
+        "details": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+        "type": "✍️ Article",
+        "btn_color": "success",
+      
+        "userDetails": {
+            "name": "Sarthak Kamra",
+            "img_url":"https://res.cloudinary.com/dicnezd6a/image/upload/v1675324358/images/Rectangle_3_1_dupnoy.png"
+        }
     },
     {
-        "img":"https://res.cloudinary.com/dicnezd6a/image/upload/v1675304803/images/Rectangle_5_2_urvkse.png",
-        "title":"Tax Benefits for Investment under National Pension Scheme launched by Government",
-        "details":"I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
-        "type":"🔬️ Education",
-        "userDetails":{
-            "name":"Sarah West"
-           
-        } 
-    },
-    {
-        "img":"https://res.cloudinary.com/dicnezd6a/image/upload/v1675304802/images/Rectangle_5_qljkpt.png",
-        "title":"Finance & Investment Elite Social Mixer @Lujiazui",
-        "details":"",
-        "type":"🗓️ Meetup",
-        "publisher_date":"Fri, 12 Oct, 2018",
-        "location":"Ahmedabad, India",
-        "btn":"Visit Website",
+        "img": "https://res.cloudinary.com/dicnezd6a/image/upload/v1675304803/images/Rectangle_5_2_urvkse.png",
+        "title": "Tax Benefits for Investment under National Pension Scheme launched by Government",
+        "details": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+        "type": "🔬️ Education",
+        "btn_color": "success",
+       
+        "userDetails": {
+            "name": "Sarah West",
+            "img_url":"https://res.cloudinary.com/dicnezd6a/image/upload/v1675324357/images/Rectangle_3_etkjiq.png"
 
-        "userDetails":{
-            "name":"Ronal Jones"
-           
-        } 
+        }
     },
     {
-        "img":"",
-        "title":"Software Developer",
-        "details":"",
-        "company":"Innovaccer Analytics Private Ltd.",
-        "type":"💼️ Job",
-        "publisher_date":"Fri, 12 Oct, 2018",
-        "location":"Noida, India",
-        "btn":"Apply on Timesjobs",
-
-        "userDetails":{
-            "name":"Joseph Gray"
-           
-        } 
+        "img": "https://res.cloudinary.com/dicnezd6a/image/upload/v1675304802/images/Rectangle_5_qljkpt.png",
+        "title": "Finance & Investment Elite Social Mixer @Lujiazui",
+        "details": "",
+        "type": "🗓️ Meetup",
+        "publisher_date": "Fri, 12 Oct, 2018",
+        "location": "Ahmedabad, India",
+        "btn": "Visit Website",
+        "btn_color": "danger",
+        "userDetails": {
+            "name": "Ronal Jones",
+            "img_url":"https://res.cloudinary.com/dicnezd6a/image/upload/v1675324359/images/Rectangle_3_2_q2cjhs.png"
+        }
+    },
+    {
+        "img": "",
+        "title": "Software Developer",
+        "details": "",
+        "company": "Innovaccer Analytics Private Ltd.",
+        "type": "💼️ Job",
+        "publisher_date": "Fri, 12 Oct, 2018",
+        "location": "Noida, India",
+        "btn": "Apply on Timesjobs",
+        "btn_color": "success",
+        "userDetails": {
+            "name": "Joseph Gray",
+            "img_url":"https://res.cloudinary.com/dicnezd6a/image/upload/v1675324359/images/Rectangle_3_6_u1piia.png"
+        }
     }
 ]
