@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import posts from '../../assets/postData.json'
 import PostCard from '../PostCard/PostCard';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -8,8 +8,19 @@ import './Post.css'
 import { AuthContext } from '../../Context/UserContext';
 
 
+
 const Posts = () => {
-const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
+    const [showb, setShow] = useState(false)
+    const [followedbtns, setFollowedBtn] = useState([])
+
+    const followBtn = (id) => {
+        // if (followedbtns?.find(followeId => followeId !== id)) {
+        //     setFollowedBtn(...followedbtns, id)
+        //     return
+        // }
+    }
+  
     return (
         <section className='posts'>
             <div className='d-flex d-sm-none p-2 justify-content-between align-items-center'>
@@ -52,34 +63,40 @@ const {user} = useContext(AuthContext)
                         </svg>
 
                         <span className='px-2 text-black-50'>Your location will help us serve better and extend a personalised experience.</span>
-                       
+
                         {
                             user?.uid &&
                             <div>
-                            
-                            <p className='d-flex align-items-center text-uppercase my-3'><svg width="18" height="16" className='m-2 ' viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.75 15.75H13.5C14.1225 15.75 14.655 15.375 14.88 14.835L17.145 9.5475C17.2125 9.375 17.25 9.195 17.25 9V7.5C17.25 6.675 16.575 6 15.75 6H11.0175L11.73 2.5725L11.7525 2.3325C11.7525 2.025 11.625 1.74 11.4225 1.5375L10.6275 0.75L5.685 5.6925C5.415 5.9625 5.25 6.3375 5.25 6.75V14.25C5.25 15.075 5.925 15.75 6.75 15.75ZM6.75 6.75L10.005 3.495L9 7.5H15.75V9L13.5 14.25H6.75V6.75ZM0.75 6.75H3.75V15.75H0.75V6.75Z" fill="black" />
-                            </svg>
-    
-                                REcommended Groups</p>
-                            <div>
-                                {
-                                    groups.map((group, i) => <div className='my-2 d-flex align-items-center justify-content-between' key={i}>
-                                        <div>
-                                            <img src={group.img} alt="" />
-                                            <span className='px-4'>{group.title}</span>
-                                        </div>
-                                        <button  className='btn rounded-pill follow-btn'> Follow</button>
-    
-                                    </div>)
-                                        }
-                                        
 
-                                    </div>
-                                    
-                                    <p className='text-primary text-end my-4'>See more...</p>
-                           </div>
-                     }
+                                <p className='d-flex align-items-center text-uppercase my-3'><svg width="18" height="16" className='m-2 ' viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.75 15.75H13.5C14.1225 15.75 14.655 15.375 14.88 14.835L17.145 9.5475C17.2125 9.375 17.25 9.195 17.25 9V7.5C17.25 6.675 16.575 6 15.75 6H11.0175L11.73 2.5725L11.7525 2.3325C11.7525 2.025 11.625 1.74 11.4225 1.5375L10.6275 0.75L5.685 5.6925C5.415 5.9625 5.25 6.3375 5.25 6.75V14.25C5.25 15.075 5.925 15.75 6.75 15.75ZM6.75 6.75L10.005 3.495L9 7.5H15.75V9L13.5 14.25H6.75V6.75ZM0.75 6.75H3.75V15.75H0.75V6.75Z" fill="black" />
+                                </svg>
+
+                                    REcommended Groups</p>
+                                <div>
+                                    {
+                                        groups.map((group, i) => <div className='my-2 d-flex align-items-center justify-content-between' key={i}>
+                                            <div>
+                                                <img src={group.img} alt="" />
+                                                <span className='px-4'>{group.title}</span>
+                                            </div>
+
+
+
+                                            <button onClick={() => setShow(!showb)} className='btn rounded-pill follow-btn'> Follow</button>
+
+
+
+
+                                        </div>)
+                                    }
+
+
+                                </div>
+
+                                <p className='text-primary text-end my-4'>See more...</p>
+                            </div>
+                        }
 
                     </div>
 
